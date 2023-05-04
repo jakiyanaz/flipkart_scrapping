@@ -1,0 +1,14 @@
+div.parentbox{
+    border: 10px solid blue;
+    width: 40vw;
+    padding: 5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    background-color: aquamarine;
+}

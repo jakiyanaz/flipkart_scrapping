@@ -1,0 +1,6 @@
+flask_cors
+pymongo
+bs4
+urllib
+requests
+logging

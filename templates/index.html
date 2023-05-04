@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Index
+
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+
+{% block content %}
+<div class="parentbox">
+    <h1>Welcome to Scrapping</h1>
+    <div class="form">
+        <form action="/review" method="POST">
+            <input type="text" name="item" id="item" placeholder="Enter item name to search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+{% endblock %}

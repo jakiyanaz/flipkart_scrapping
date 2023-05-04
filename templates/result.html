@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Result
+
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/result.css">
+{% endblock %}
+
+{% block content %}
+<div class="parentbox">
+    <h1>Result</h1>
+    <table border="1" cellspacing = "0">
+        <tr>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Comment Heading</th>
+            <th>My comments</th>
+            <!-- <th>Comments</th> -->
+        </tr>
+        {% for review in reviews %}
+        <tr>
+            <td>{{review['Product']}}</td>
+            <td>{{review['Name']}}</td>
+            <td>{{review['Rating']}}</td>
+            <td>{{review['CommentHeading']}}</td>
+            <td>{{review['MyComment']}}</td>
+            <!-- <td></td> -->
+            {% endfor %}
+        </tr>
+    </table>
+</div>
+{% endblock %}
